@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddEmployee">
+   <children>
+      <Pane layoutX="37.0" layoutY="37.0" prefHeight="525.0" prefWidth="525.0" style="-fx-background-color: #142B4D;">
+         <children>
+            <Button layoutX="197.0" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #11cdef;" text="SUBMIT" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField layoutX="48.0" layoutY="156.0" />
+            <Label layoutX="47.0" layoutY="69.0" prefHeight="20.0" prefWidth="227.0" text="Employee_ID" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="139.0" prefHeight="20.0" prefWidth="171.0" text="Employee_First_Name" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="148.0" layoutY="14.0" prefHeight="17.0" prefWidth="227.0" text="Add Employee" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="48.0" layoutY="227.0" />
+            <Label layoutX="47.0" layoutY="210.0" prefHeight="20.0" prefWidth="171.0" text="Employee_Phone" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="48.0" layoutY="294.0" />
+            <Label layoutX="47.0" layoutY="277.0" prefHeight="20.0" prefWidth="171.0" text="employee_dob" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="48.0" layoutY="358.0" />
+            <Label layoutX="47.0" layoutY="341.0" prefHeight="20.0" prefWidth="171.0" text="Employee_Email" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="48.0" layoutY="425.0" />
+            <Label layoutX="47.0" layoutY="408.0" prefHeight="20.0" prefWidth="171.0" text="Employee_PassWord" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="329.0" layoutY="156.0" />
+            <ChoiceBox layoutX="328.0" layoutY="89.0" prefWidth="150.0" />
+            <Label layoutX="328.0" layoutY="69.0" prefHeight="20.0" prefWidth="196.0" text="Position Of Employment" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="328.0" layoutY="139.0" prefHeight="20.0" prefWidth="171.0" text="Employee_Last_Name" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="329.0" layoutY="227.0" />
+            <Label layoutX="328.0" layoutY="210.0" prefHeight="20.0" prefWidth="171.0" text="Employee_Address" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="329.0" layoutY="294.0" />
+            <Label layoutX="328.0" layoutY="277.0" prefHeight="20.0" prefWidth="171.0" text="Employee_NIC_NO" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="329.0" layoutY="358.0" />
+            <Label layoutX="328.0" layoutY="341.0" prefHeight="20.0" prefWidth="171.0" text="Employee_UserName" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="329.0" layoutY="425.0" />
+            <Label layoutX="328.0" layoutY="408.0" prefHeight="20.0" prefWidth="171.0" text="Re-Enter PassWord" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="48.0" layoutY="89.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

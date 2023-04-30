@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageCustomers">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+         <children>
+            <Pane layoutX="1.0" prefHeight="800.0" prefWidth="294.0" style="-fx-background-color: #142B4D;" AnchorPane.bottomAnchor="-0.7999999999999545" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="77.0" layoutY="164.0" prefHeight="20.0" prefWidth="143.0" text="MANAGER" textFill="#11cdef">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="112.0" layoutY="194.0" prefWidth="70.0" text="Name" textFill="#11cdef">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER" layoutX="67.0" layoutY="245.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Manage Employees" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Assets/avatar-icon-vector-11835238.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="CENTER" layoutX="67.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Manage Customers" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="67.0" layoutY="365.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Supplier Orders" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="67.0" layoutY="425.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Orders" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="67.0" layoutY="485.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Reports" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="691.0" prefHeight="17.0" prefWidth="254.0" text="Date and Time" textFill="#11cdef" />
+                  <Button alignment="CENTER" layoutX="67.0" layoutY="733.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Log Out" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="67.0" layoutY="545.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Product Inventry" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="1000.0">
+         <children>
+            <Pane focusTraversable="true" layoutY="-1.0" prefHeight="800.0" prefWidth="698.0" style="-fx-background-color: #8898AA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="14.0" text="Manage Customers" textFill="#142b4d">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="20.0" layoutY="135.0" prefHeight="637.0" prefWidth="646.0" tableMenuButtonVisible="true">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="NO" />
+                        <TableColumn prefWidth="117.59994506835938" text="Employee Id" />
+                        <TableColumn prefWidth="101.60005187988281" text="C2" />
+                        <TableColumn prefWidth="105.60003662109375" text="C2" />
+                        <TableColumn prefWidth="116.0" text="C2" />
+                        <TableColumn prefWidth="131.20001220703125" text="C2" />
+                     </columns>
+                  </TableView>
+                  <ScrollBar layoutX="666.0" layoutY="135.0" orientation="VERTICAL" prefHeight="650.0" prefWidth="14.0" />
+                  <Button alignment="CENTER" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Add Customer" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="523.0" layoutY="81.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #11cdef;" text="Generate Reports" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ScrollBar layoutX="20.0" layoutY="771.0" prefHeight="14.0" prefWidth="646.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

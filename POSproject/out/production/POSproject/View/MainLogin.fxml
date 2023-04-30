@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainLoginController">
+   <children>
+      <Pane layoutX="37.0" layoutY="37.0" prefHeight="525.0" prefWidth="525.0" style="-fx-background-color: #142B4D;">
+         <children>
+            <Button fx:id="btnLogin" layoutX="189.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: #11cdef;" text="LOGIN" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passWord" layoutX="189.0" layoutY="370.0" prefHeight="38.0" prefWidth="149.0" promptText="Password" />
+            <TextField fx:id="userName" layoutX="189.0" layoutY="295.0" prefHeight="38.0" prefWidth="149.0" promptText="User Name" />
+            <ChoiceBox fx:id="PositionOfEmployment" layoutX="189.0" layoutY="220.0" prefHeight="38.0" prefWidth="150.0" />
+            <Label fx:id="txtPositionOfEmployment" alignment="CENTER" layoutX="102.0" layoutY="14.0" prefHeight="54.0" prefWidth="323.0" text="Hello User, Login Here" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtError" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="502.0" prefHeight="20.0" prefWidth="526.0" text="Error Message" textAlignment="CENTER" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="191.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/avatar-icon-vector-11835238.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="btnClose" cancelButton="true" layoutX="572.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" onMouseClicked="#handleClose" prefHeight="30.0" prefWidth="24.0" style="-fx-background-color: #11cdef;" text="X" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

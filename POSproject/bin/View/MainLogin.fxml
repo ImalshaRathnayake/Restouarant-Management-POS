@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainLoginController">
+   <children>
+      <Pane layoutX="37.0" layoutY="37.0" prefHeight="525.0" prefWidth="525.0" style="-fx-background-color: #142B4D;">
+         <children>
+            <Button fx:id="btnLogin" layoutX="188.0" layoutY="461.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #11cdef;" text="LOGIN" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="welcomePhoto" fitHeight="150.0" fitWidth="463.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/welcome%20png.jpg" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="passWord" layoutX="188.0" layoutY="387.0" promptText="Password" />
+            <TextField fx:id="userName" layoutX="188.0" layoutY="313.0" promptText="User Name" />
+            <ChoiceBox fx:id="PositionOfEmployment" layoutX="188.0" layoutY="238.0" prefWidth="150.0" />
+            <Label fx:id="txtPositionOfEmployment" alignment="CENTER" layoutX="149.0" layoutY="202.0" prefHeight="20.0" prefWidth="227.0" text="Position Of Employment" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtError" alignment="CENTER" layoutX="149.0" layoutY="502.0" prefHeight="20.0" prefWidth="227.0" text="Position Of Employment" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnClose" cancelButton="true" layoutX="572.0" layoutY="-1.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="24.0" style="-fx-background-color: #11cdef;" text="X" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

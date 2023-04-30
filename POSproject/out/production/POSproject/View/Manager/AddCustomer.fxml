@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Manager.AddCustomerController">
+   <children>
+      <Pane layoutX="37.0" layoutY="37.0" prefHeight="525.0" prefWidth="525.0" style="-fx-background-color: #142B4D;">
+         <children>
+            <TextField fx:id="Customer_Name" layoutX="187.0" layoutY="192.0" prefHeight="30.0" prefWidth="149.0" promptText="Customer_Name" />
+            <Label fx:id="lbl_addCustomer" alignment="CENTER" layoutX="148.0" layoutY="14.0" prefHeight="17.0" prefWidth="227.0" text="Add Customer" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Customer_Phone" layoutX="187.0" layoutY="278.0" prefHeight="30.0" prefWidth="149.0" promptText="Customer_Phone" />
+            <TextField fx:id="Customer_Email" layoutX="187.0" layoutY="368.0" prefHeight="30.0" prefWidth="149.0" promptText="Customer_Address" />
+            <Button fx:id="btn_sumbit" layoutX="187.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#handleSubmit" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #11cdef;" text="SUBMIT" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lbl_text_error" alignment="CENTER" layoutX="-2.0" layoutY="488.0" prefHeight="30.0" prefWidth="526.0" text="Error message" textFill="#11cdef">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Customer_ID" layoutX="187.0" layoutY="102.0" prefHeight="30.0" prefWidth="149.0" promptText="Customer_ID" />
+         </children>
+      </Pane>
+      <Button fx:id="btnClose" cancelButton="true" layoutX="572.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" onMouseClicked="#handle_close" prefHeight="30.0" prefWidth="24.0" style="-fx-background-color: #11cdef;" text="X" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
